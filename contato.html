@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleContato.css">
+    <title>Contato a mim</title>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <h2>Novo Contato</h2>
+            <a href="index.html"><button>Voltar a página inicial</button></a>
+        </section>   
+
+        <form id="form" class = "form" action="https://formsubmit.co/victorharaujo38@hotmail.com" method="POST">
+
+            <div class="form-content">
+                <label for="nome">Nome do usuário</label>
+                <input type="text"
+                name = "name"
+                id="nome"
+                placeholder="Digite o nome do usuário..." required>
+            </div>
+
+            <div class="form-content">
+                <label for="email">Email</label>
+                <input type="email"
+                name="email"
+                id="email"
+                placeholder="Digite o seu email..." required>
+
+            </div>
+            <div class="form-content">
+                <label for="mensagem">Escreva uma mensagem para mim</label>
+                <input type="text"
+                name="message"
+                id="mensagem"
+                placeholder="Digite uma mensagem..." required>
+
+            </div>
+
+            <button type="submit" >Enviar email</button>
+
+            <input type="hidden" name="_subject" value="Novo Contato!!">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+            <input type="hidden" name="_autoresponse" value="Obrigado pelo e-mail! ele será lido em breve!">
+        </form>
+
+    </div>
+    <script src="controleContato.js"></script>
+</body>
+</html>
